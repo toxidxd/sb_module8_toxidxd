@@ -29,4 +29,3 @@ for debtor in range(0, debtor_count, 5):
     total_debt += int(input(f"Должник с номером {debtor} должен: "))
 
 print(f"Общая сумма долга: {total_debt}")
-
