@@ -14,8 +14,3 @@ for n in range(1, num + 1):
     s = x + s
 
 print('Член ряда ', x, 'сумма ряда ', s)
-
-
-# Подсмотрел ответ в интернетах. Честно.
-# https://pythonru.com/osnovy/kak-izvlech-koren-v-python
-# Видимо с математикой беда)
