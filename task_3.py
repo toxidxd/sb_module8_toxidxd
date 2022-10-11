@@ -15,13 +15,12 @@ print('Задача 3. Таймер для микроволновых печей
 # В данном задании используем цикл for.
 # “reverse_timer” – переменная счетчик, которую запрашиваем у пользователя через функцию ввода input.
 
-reverse_timer = int(input("Time 4 cooking: "))
+reverse_timer = int(input("Установите время разогрева: "))
 
 for second in range(reverse_timer, -1, -1):
-    print(f"Left {second} seconds.")
-    food_cooked = int(input("Food is ready to eat? 1/0: "))
+    print(f"Осталось {second} секунд.")
+    food_cooked = int(input("Еда готова? 1/0: "))
     if food_cooked:
-        print("Your food is ready, you can pick it up")
+        break
 
-
-print("Eat hot like Hell. Be careful")
+print("Ваша еда готова, осторожно горячo!")
