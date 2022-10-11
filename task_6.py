@@ -9,17 +9,16 @@ print('Задача 6. Письмо')
 # чтобы оно поместилось в конверт.
 # Размеры письма вводятся с клавиатуры.
 
-# kor =
-
 letter_size = 12
-mail_size = int(input("Введите размер письма: "))
+mail_size = int(input("Введите размер письма (см): "))
 fold_count = 0
 
 if mail_size > letter_size:
-    for x in range(12, mail_size, 12):
-        fold_count += 1
+    while mail_size > letter_size:
+        mail_size /= 2
+        fold_count += 2
 
-    print(fold_count)
+    print(f"Письмо нужно сложить {fold_count} раз(а).")
 
 else:
-    print("Письмо влезает в конверт без складывания")
+    print("Письмо влезает в конверт без складывания!")
