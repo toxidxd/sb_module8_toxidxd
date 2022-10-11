@@ -23,4 +23,4 @@ for second in range(reverse_timer, -1, -1):
     if food_cooked:
         break
 
-print("Ваша еда готова, осторожно горячo!")
+print("Ваша еда готова, осторожно горячо!")
